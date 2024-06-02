@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'templates/styles.css' %}">
+    <title>TEAM 22</title>
+</head>
+<body>
+<h1>
+    THIS IS HEADING FOR TEAM 22
+</h1>
+<p>
+    This is a sample paragraph. This is a sample paragraph. This is a sample paragraph.
+    This is a sample paragraph.
+    This is a sample paragraph. This is a sample paragraph.
+</p>
+<ul>
+{% for item in my_list %}
+    <li style="color: {% if forloop.counter|divisibleby:2 %}blue{% else %}black{% endif %};">{{ item }}</li>
+{% endfor %}
+</ul>
+<img src="{% static 'templates/logo.png' %}" height="100" width="100">
+<img src="{% static 'templates/logo2.jpg' %}" height="100" width="100">
+<br><br>
+<a href="{% url 'home' %}">Home</a>
+<a href="{% url 'about' %}">About</a>
+</body>
+</html>

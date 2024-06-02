@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ABOUT PAGE SAMPLE - TEAM 22</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'templates/styles.css' %}">
+</head>
+<body>
+<h1>
+    THIS IS SAMPLE TEAM 22 MISSION
+</h1>
+<p>
+    This is a paragraph about club information.
+    This is a paragraph about club information. This is a paragraph about club information.
+</p>
+<p>
+    These are club goals. These are club goals.
+    These are club goals.
+    These are club goals. These are club goals.
+</p>
+<p>
+    These are club achievements. These are club achievements.
+    These are club achievements.
+    These are club achievements.
+    These are club achievements. These are club achievements.
+</p>
+<ol>
+    <li>Key event 1</li>
+    <li>Key event 2</li>
+    <li>Key event 3</li>
+    <li>Key event 4</li>
+    <li>Key event 5</li>
+</ol>
+<img src="{% static 'templates/act1.jpeg' %}" height="400" width="400">
+<img src="{% static 'templates/act2.png' %}" height="400" width="400">
+<br><br>
+<a href="{% url 'home' %}">Home</a>
+</body>
+</html>

@@ -1,0 +1,45 @@
+body {
+    font-family: "Times New Roman", sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #222;
+    text-align: center;
+    margin-top: 10px;
+}
+
+p {
+    color: #333;
+    margin: 10px;
+    text-align: center;
+}
+
+ul, ol {
+    margin: 20px;
+    padding: 0;
+    list-style-position: inside;
+}
+
+ul li, ol li {
+    margin: 10px 0;
+}
+
+nav {
+    text-align: center;
+    margin: 20px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 90%;
+}
