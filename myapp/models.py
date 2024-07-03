@@ -63,6 +63,7 @@ class Order(models.Model):
     member = models.ForeignKey(Member, on_delete=models.CASCADE)
     order_type = models.IntegerField(choices=ORDER_TYPE_CHOICES, default=BORROW)
     order_date = models.DateField(default=timezone.now)
+    favorite_books = models.CharField(max_length=300, blank=True)
 
     def __str__(self):
         return f"Order {self.id} by {self.member.username}"
