@@ -71,3 +71,13 @@ class Order(models.Model):
     def total_items(self):
         return self.books.count()
 
+
+class Review(models.Model):
+    book = models.ForeignKey(Book, related_name='reviews', on_delete=models.CASCADE)
+    member = models.ForeignKey(Member, on_delete=models.CASCADE)
+    rating = models.PositiveSmallIntegerField()
+    review_text = models.TextField(blank=True, null=True)
+    review_date = models.DateField(default=timezone.now)
+
+    def __str__(self):
+        return f"Review by {self.member.username} for {self.book.title}"
